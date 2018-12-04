@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/**
+ * 共通設定
+ */
+body {
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif, "メイリオ", Meiryo;
+    font-size: 30px;
+    max-width: 50%;
+    color: #333333;
+    text-align:center;
+    margin: auto;
+}
+h1 { 
+    font-size: 200%;
+    padding-top: 0.2%;
+    color: #000066;
+    text-align: center;
+}
+h2 { 
+    text-align: center;
+}
+
+/**
+* 固定ヘッダー
+*/
+.fixed_header{
+    background: rgb(238, 236, 236);
+    padding: 10px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+/**
+* 入力エリア
+*/
+.input_txt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.input_txt input[type='text'] {
+    font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 80%;
+    padding: 0.3em;
+    margin-top:10%;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #1b2538;
+	border: none;
+	border-bottom: 2px solid #1b2538;
+	background: transparent;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid #da3c41;
+	outline: none;
+}
+
+/**
+* ボタン設定
+*/
+.square_btn{
+    display: inline-block;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 8%;
+    border-radius: 30px;
+    font-size: 120%;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+.square_btn_gray{
+    display: inline-block;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 10%;
+    border-radius: 30px;
+    font-size: 100%;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #CCCCCC 0%, #2e2d2d 100%);
+    background-image: linear-gradient(45deg, #CCCCCC 0%, #2e2d2d 100%);
+    transition: .4s;
+}
+
+.square_btn_gray:hover {
+    background-image: -webkit-linear-gradient(45deg, #CCCCCC 0%, #111111 100%);
+    background-image: linear-gradient(45deg, #CCCCCC 0%, #111111 100%);
+}
